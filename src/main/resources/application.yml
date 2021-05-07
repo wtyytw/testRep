@@ -1,0 +1,33 @@
+server:
+  port: 8080
+  #  servlet:
+  #    context-path: /bn
+  tomcat:
+    uri-encoding: UTF-8 #
+spring:
+
+  servlet:
+    multipart:
+      #      max-file-size: 10485760
+      max-file-size: 10
+      max-request-size: 104857600
+  datasource:
+    password: root
+    username: root
+    url: jdbc:mysql://localhost:3306/integratedinformationbase_vue?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+    type: com.alibaba.druid.pool.DruidDataSource
+logging:
+  level:
+    com.bn.docmanager.mapper: debug
+mybatis:
+  config-location: classpath:mybatis.xml
+  mapper-locations: classpath:mapper/*.xml
+pagehelper:
+  offsetAsPageNum: true
+  rowBoundsWithCount: true
+  reasonable: true
+  returnPageInfo: true
+  params: count=countSql
+
+
+

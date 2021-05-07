@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bn.docmanager.mapper.PersonalBasicInformationMapper">
+  <resultMap id="BaseResultMap" type="com.bn.docmanager.model.PersonalBasicInformation">
+    <!--@mbg.generated-->
+    <!--@Table personal_basic_information-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="basic_name" jdbcType="VARCHAR" property="basicName" />
+    <result column="basic_IDCard" jdbcType="VARCHAR" property="basicIdcard" />
+    <result column="basic_birthday" jdbcType="TIMESTAMP" property="basicBirthday" />
+    <result column="basic_age" jdbcType="INTEGER" property="basicAge" />
+    <result column="basic_phone" jdbcType="VARCHAR" property="basicPhone" />
+    <result column="basic_sex" jdbcType="VARCHAR" property="basicSex" />
+    <result column="basic_politicalOutlook" jdbcType="VARCHAR" property="basicPoliticaloutlook" />
+    <result column="basic_level" jdbcType="VARCHAR" property="basicLevel" />
+    <result column="basic_nation" jdbcType="VARCHAR" property="basicNation" />
+    <result column="basic_education" jdbcType="VARCHAR" property="basicEducation" />
+    <result column="basic_householdregister" jdbcType="VARCHAR" property="basicHouseholdregister" />
+    <result column="basic_currentresidence" jdbcType="VARCHAR" property="basicCurrentresidence" />
+    <result column="basic_workingDate" jdbcType="TIMESTAMP" property="basicWorkingdate" />
+    <result column="basic_workingYears" jdbcType="INTEGER" property="basicWorkingyears" />
+    <result column="basic_dateOfJoiningTheParty" jdbcType="TIMESTAMP" property="basicDateofjoiningtheparty" />
+    <result column="createtime" jdbcType="TIMESTAMP" property="createtime" />
+    <result column="basic_partyage" jdbcType="INTEGER" property="basicPartyage" />
+    <result column="createby" jdbcType="VARCHAR" property="createby" />
+    <result column="updateTime" jdbcType="TIMESTAMP" property="updatetime" />
+    <result column="updateBy" jdbcType="VARCHAR" property="updateby" />
+  </resultMap>
+ 
+</mapper>
